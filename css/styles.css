@@ -17,6 +17,7 @@
 
 /* effects */
 @import url("./effects/hover-underline.css");
+@import url("./effects/hover-text-shadow.css");
 
 /* pages code */
 @import url("./pages/edit-create-form.css");

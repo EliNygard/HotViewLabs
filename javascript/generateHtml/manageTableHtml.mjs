@@ -10,7 +10,8 @@ export function generateTableHtml(post) {
 
   const title = document.createElement("td");
   const linkTitle = document.createElement("a");
-  linkTitle.classList.add("table-title");
+  linkTitle.title = "View Post"
+  linkTitle.classList.add("table-title", "hover-text-shadow");
   linkTitle.innerHTML = post.title;
   linkTitle.addEventListener("click", (event) => {
     event.preventDefault();

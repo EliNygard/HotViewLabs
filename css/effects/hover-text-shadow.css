@@ -1,0 +1,8 @@
+.hover-text-shadow {
+    text-shadow: none;
+    transition: text-shadow .3s ease-in-out;
+}
+
+.hover-text-shadow:hover {
+    text-shadow: 0 0 .3px var(--color-theme-dark-blue), 0 0 .3px var(--color-theme-dark-blue);
+}
