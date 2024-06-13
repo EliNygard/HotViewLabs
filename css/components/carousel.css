@@ -99,11 +99,11 @@
     cursor: pointer;
 }
 
-.button-carousel:hover {
+/* .button-carousel:hover {
     text-decoration: underline;
     color: var(--color-theme-dark-blue);
-    transition: underline 4s ease-in;
-}
+    transition: underline 4s ease-in-out;
+} */
 
 .carousel-buttons-container {
     display: flex;
