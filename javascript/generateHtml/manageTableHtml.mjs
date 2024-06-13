@@ -81,7 +81,6 @@ export function generateTableHtml(post) {
 
   deleteBtnCell.appendChild(deleteBtn);
   editBtnCell.appendChild(editBtn);
-  // pubBtnCell.appendChild(pubBtn);
   title.appendChild(linkTitle);
   tableRow.append(title, author, date, editBtnCell, deleteBtnCell);
   tableBody.appendChild(tableRow);
