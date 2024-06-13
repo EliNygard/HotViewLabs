@@ -97,6 +97,7 @@
     font-size: 1rem;
     color: var(--color-theme-dark-blue);
     cursor: pointer;
+    padding: 0;
 }
 
 /* .button-carousel:hover {
