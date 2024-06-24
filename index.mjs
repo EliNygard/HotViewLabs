@@ -48,13 +48,34 @@ async function checkAndRenderPosts() {
 
 await checkAndRenderPosts();
 
+// Search
+const searchForm = document.forms.search;
+searchForm.addEventListener("input", (event) => {
+  const query = searchForm.query.value;
+  const results = searchPosts(query, posts)
+  // renderResults(results)
+})
+
+// checks a single post object for a match with search input
+function postMatches(query, post) {
+  const content = [
+    post.title,
+    post.author,
+    post.tags.join(", ")
+  ]
+
+  return content.map(value => value.toLocaleLowerCase()).some(value => {
+    return value.includes(query.toLocaleLowerCase())
+  })
+}
+
+// filters a post array for matches
+function searchPosts(query, posts) {
+  return posts.filter(post => postMatches(query, post))
+}
+
+
 export async function renderPosts(posts) {
-  // const responseData = await getPosts(url);
-  // const posts = responseData.data;
-
-  // slice the 12 latests posts:
-  // const slicedPosts = posts.slice(0, 12);
-
   const imageGallery = document.querySelector(".image-gallery");
   imageGallery.innerHTML = "";
   posts.forEach((post) => {

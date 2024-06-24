@@ -22,6 +22,11 @@ export async function generateHeaderHtml() {
   const rightContainer = document.createElement("div");
   rightContainer.classList.add("content-right");
 
+  const searchBtn = document.createElement("div")
+  const searchIcon = document.createElement("i")
+  searchIcon.classList.add("fa-solid", "fa-magnifying-glass")
+
+
   const linkLogin = document.createElement("a");
   linkLogin.title = "Log into your account"
   linkLogin.textContent = "Log in";
@@ -58,7 +63,8 @@ export async function generateHeaderHtml() {
   //   }
   });
 
-  rightContainer.append(linkLogin, linkRegister);
+  searchBtn.appendChild(searchIcon)
+  rightContainer.append(searchBtn, linkLogin, linkRegister);
   leftContainer.appendChild(linkHome);
   nav.append(leftContainer, rightContainer);
   header.appendChild(nav);
