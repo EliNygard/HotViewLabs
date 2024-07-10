@@ -38,11 +38,13 @@ async function renderHomePage() {
       await generateHeaderLoggedInHtml();
       await setupPostThumbs(API_BASE + API_POSTS + API_NAME);
       await renderNewPostsCarousel(API_BASE + API_POSTS + API_NAME);
+      await displaySearchResults(API_BASE + API_POSTS + API_NAME)
     } else {
       // If user is not logged in, render header for visitors and render posts from this account anyway:
       await generateHeaderHtml();
       await setupPostThumbs(API_BASE + API_POSTS + "/Leli_Nygard");
       await renderNewPostsCarousel(API_BASE + API_POSTS + "/Leli_Nygard");
+      await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard")
     }
   } catch (error) {
     console.error(error);
@@ -65,14 +67,23 @@ searchForm.addEventListener("input", (event) => {
 
 // 2. get posts
 
-async function searchFunction(url) {
+async function displaySearchResults(url) {
   const responseData = await getPosts(url)
   const posts = responseData.data;
   const results = searchPosts("navigating", posts);
   console.log(results);
+
+  // forEach
+  results.forEach((result) => {
+
+    const title = document.createElement("p")
+    console.log(title);
+    title.textContent = result.title
+  })
+
 }
 
-searchFunction(API_BASE + API_POSTS + "/Leli_Nygard")
+
 
 
 
