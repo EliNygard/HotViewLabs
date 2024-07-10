@@ -9,7 +9,7 @@ import { generateCategoryHtml } from "./javascript/generateHtml/filterPostsCateg
 import { generateHeaderHtml } from "./javascript/generateHtml/header.mjs";
 import { generateHeaderLoggedInHtml } from "./javascript/generateHtml/headerLoggedIn.mjs";
 import { generateThumbPostsHtml } from "./javascript/generateHtml/thumbPostHtml.mjs";
-import { daysUntilSummit } from "./javascript/ui/dates.mjs";
+import { displayDaysUntilSummit } from "./javascript/ui/dates.mjs";
 import {
   addEventListenerOnCategory,
   extractCategories,
@@ -19,9 +19,10 @@ import {
   paginate,
   renderPaginationControls,
 } from "./javascript/ui/pagination.mjs";
+import { searchPosts } from "./javascript/ui/search.mjs";
 import { sortPostsByDate } from "./javascript/ui/sortPosts.mjs";
 
-async function checkAndRenderPosts() {
+async function renderHomePage() {
   const userName = JSON.parse(localStorage.getItem("userName"));
 
   showLoader();
@@ -29,6 +30,9 @@ async function checkAndRenderPosts() {
   try {
     // Promise for testing loader:
     // await new Promise(resolve => setTimeout(resolve, 2000));
+
+    displayDaysUntilSummit();
+
     if (userName) {
       // if user is logged in
       await generateHeaderLoggedInHtml();
@@ -47,18 +51,28 @@ async function checkAndRenderPosts() {
   }
 }
 
-await checkAndRenderPosts();
-
-// Days Until Next Summit
-function displayDaysUntilSummit() {
-  const days = document.getElementById("daysUntilSummit")
-  days.textContent = daysUntilSummit()
-}
-
-displayDaysUntilSummit()
+await renderHomePage();
 
 // Search
 // 1. get the input from form
+
+const searchForm = document.getElementById("search");
+
+searchForm.addEventListener("input", (event) => {
+  const query = searchForm.value;
+  console.log(query);
+});
+
+// 2. get posts
+
+async function searchFunction(url) {
+  const responseData = await getPosts(url)
+  const posts = responseData.data;
+  const results = searchPosts("navigating", posts);
+  console.log(results);
+}
+
+searchFunction(API_BASE + API_POSTS + "/Leli_Nygard")
 
 
 
