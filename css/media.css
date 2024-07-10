@@ -148,7 +148,7 @@
   /* pagination */
 
   .pagination {
-    gap: 2rem;
+    gap: 4rem;
   }
 
   /* post page */
@@ -276,7 +276,7 @@
   }
 
   /* ui container */
- 
+
   .ui-container .button-small {
     font-size: 1rem;
     padding: 0.25rem 1rem;
@@ -320,11 +320,23 @@
     padding: 2rem 0rem;
   }
 
-      /* sort, filter */
+  /* sort, filter */
 
-      .ui-wrapper {
-        margin-left: 0; 
-    }
+  .ui-wrapper {
+    margin-left: 0;
+  }
+
+  /* post-list*/
+
+  .image-gallery {
+    margin-bottom: 4rem;
+  }
+
+  /* pagination*/
+
+  .pagination {
+    margin-bottom: 9rem;
+  }
 
   /* header and footer */
 
