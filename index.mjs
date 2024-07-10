@@ -9,6 +9,7 @@ import { generateCategoryHtml } from "./javascript/generateHtml/filterPostsCateg
 import { generateHeaderHtml } from "./javascript/generateHtml/header.mjs";
 import { generateHeaderLoggedInHtml } from "./javascript/generateHtml/headerLoggedIn.mjs";
 import { generateThumbPostsHtml } from "./javascript/generateHtml/thumbPostHtml.mjs";
+import { daysUntilSummit } from "./javascript/ui/dates.mjs";
 import {
   addEventListenerOnCategory,
   extractCategories,
@@ -47,6 +48,14 @@ async function checkAndRenderPosts() {
 }
 
 await checkAndRenderPosts();
+
+// Days Until Next Summit
+function displayDaysUntilSummit() {
+  const days = document.getElementById("daysUntilSummit")
+  days.textContent = daysUntilSummit()
+}
+
+displayDaysUntilSummit()
 
 // Search
 // 1. get the input from form
