@@ -57,29 +57,28 @@ await renderHomePage();
 
 // Search
 // 1. get the input from form
-
-const searchForm = document.getElementById("search");
-
-searchForm.addEventListener("input", (event) => {
-  const query = searchForm.value;
-  console.log(query);
-});
-
 // 2. get posts
 
 async function displaySearchResults(url) {
   const responseData = await getPosts(url)
   const posts = responseData.data;
-  const results = searchPosts("navigating", posts);
-  console.log(results);
-
-  // forEach
-  results.forEach((result) => {
-
-    const title = document.createElement("p")
-    console.log(title);
-    title.textContent = result.title
-  })
+  const searchForm = document.getElementById("search");
+  searchForm.addEventListener("input", (event) => {
+  
+  
+    const query = searchForm.value;
+    console.log(query);
+    
+    const results = searchPosts(query, posts);
+    console.log(results);
+    
+    results.forEach((result) => {
+      // function generateSearchResultHtml:
+      const title = document.createElement("p")
+      console.log(title);
+      title.textContent = result.title
+    })
+  });
 
 }
 
