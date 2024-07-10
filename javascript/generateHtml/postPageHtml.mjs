@@ -1,5 +1,5 @@
 import { copyUrlMessage } from "../messages/copyUrlMessage.mjs";
-import { formatDate, removeUnderscore } from "../ui/formatting.mjs";
+import { formatDate, formatDateMonthWord, removeUnderscore } from "../ui/formatting.mjs";
 import { scrollToTop } from "../utils/scroll.mjs";
 
 export function generatePostPageHtml(post) {
@@ -31,10 +31,10 @@ export function generatePostPageHtml(post) {
   date.classList.add("font-secondary");
   if (post.updated === post.created) {
     const formattedDate = post.created;
-    date.textContent = formatDate(formattedDate);
+    date.textContent = formatDateMonthWord(formattedDate);
   } else {
     const formattedDate = post.updated;
-    date.textContent = formatDate(formattedDate);
+    date.textContent = formatDateMonthWord(formattedDate);
   }
 
   const iconCopyContainer = document.createElement("div");
