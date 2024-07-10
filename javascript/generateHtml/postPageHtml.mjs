@@ -61,7 +61,7 @@ export function generatePostPageHtml(post) {
   category.textContent = post.tags;
 
   const bodyText = document.createElement("p");
-  bodyText.classList.add("post-content", "font-primary", "body-text");
+  bodyText.classList.add("post-content", "font-primary", "body-text", "post-body-text");
   bodyText.textContent = post.body;
 
   const scrollBtnContainer = document.createElement("div");

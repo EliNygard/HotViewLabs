@@ -52,7 +52,7 @@
     color: var(--color-theme-dark-orange);
 }
 
-.body-text {
+.post-body-text {
     padding-bottom: 4rem;
     white-space: pre-wrap;
 }

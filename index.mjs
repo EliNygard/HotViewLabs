@@ -53,14 +53,6 @@ await checkAndRenderPosts();
 
 
 
-const searchForm = document.forms.search;
-searchForm.addEventListener("input", (event) => {
-  const query = searchForm.query.value;
-  const results = searchPosts(query, posts)
-  // renderResults(results)
-})
-
-
 
 
 export async function renderPosts(posts) {

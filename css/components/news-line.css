@@ -1,0 +1,12 @@
+.news-line-container {
+    background-color: var(--color-theme-dark-blue);
+    margin: 1.5rem 0;
+}
+
+.news-line-container p {
+    color: var(--color-theme-light-blue);
+}
+
+.news-line-container span {
+    text-transform: uppercase;
+}
