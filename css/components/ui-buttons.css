@@ -1,4 +1,7 @@
 .ui-wrapper {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
     margin: 1rem .5rem;
 }
 
