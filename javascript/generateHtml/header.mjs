@@ -54,13 +54,6 @@ export async function generateHeaderHtml() {
       targetPath = ".register.html"
     }
     window.location.href = targetPath;
-  //   const currentPath = window.location.pathname;
-  //   if (currentPath.includes("/post") || !currentPath.includes("/account")) {
-  //     window.location.href = "../account/register.html";
-  //   } 
-  //   if (!currentPath.includes("/post")) {
-  //     window.location.href = "./account/register.html";
-  //   }
   });
 
   searchBtn.appendChild(searchIcon)
