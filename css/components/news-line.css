@@ -5,8 +5,10 @@
 
 .news-line-container p {
     color: var(--color-theme-light-blue);
+    padding: .5rem;
 }
 
-.news-line-container span {
-    text-transform: uppercase;
-}
+.responsive-line-break::after {
+    content: "\A";
+    white-space: pre;
+  }

@@ -65,6 +65,12 @@
     padding: 0rem;
   }
 
+  /*news line*/
+
+  .responsive-line-break::after {
+    content: "";
+  }
+
   /* carousel */
 
   .carousel-wrapper {
