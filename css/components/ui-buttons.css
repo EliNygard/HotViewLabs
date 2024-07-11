@@ -20,13 +20,13 @@
     color: var(--color-theme-dark-blue);
 }
 
-.sort-posts-container {
+/* .sort-posts-container { */
     /* margin: 1rem .5rem; */
-}
+/* } */
 
-.filter-posts-container {
+/* .filter-posts-container { */
     /* margin: 0 .5rem 1.5rem .5rem */
-}
+/* } */
 
 /* .ui-buttons {
     gap: .5rem;
