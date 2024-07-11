@@ -1,0 +1,36 @@
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+
+}
+
+.topnav__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav__item {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.topnav__close {
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: 8rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.topnav__open[aria-expanded='true'] {
+    translate: 0;
+}
+
+.topnav__menu[aria-expanded='true'] {
+    translate: 0;
+}

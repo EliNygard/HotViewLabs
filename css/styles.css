@@ -15,6 +15,7 @@
 @import url("./components/loader.css");
 @import url("./components/ui-buttons.css");
 @import url("./components/news-line.css");
+@import url("./components/topnav.css");
 
 /* effects */
 @import url("./effects/hover-underline.css");

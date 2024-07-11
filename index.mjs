@@ -38,13 +38,13 @@ async function renderHomePage() {
       await generateHeaderLoggedInHtml();
       await setupPostThumbs(API_BASE + API_POSTS + API_NAME);
       await renderNewPostsCarousel(API_BASE + API_POSTS + API_NAME);
-      await displaySearchResults(API_BASE + API_POSTS + API_NAME)
+      await displaySearchResults(API_BASE + API_POSTS + API_NAME);
     } else {
       // If user is not logged in, render header for visitors and render posts from this account anyway:
       await generateHeaderHtml();
       await setupPostThumbs(API_BASE + API_POSTS + "/Leli_Nygard");
       await renderNewPostsCarousel(API_BASE + API_POSTS + "/Leli_Nygard");
-      await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard")
+      await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard");
     }
   } catch (error) {
     console.error(error);
@@ -60,33 +60,24 @@ await renderHomePage();
 // 2. get posts
 
 async function displaySearchResults(url) {
-  const responseData = await getPosts(url)
+  const responseData = await getPosts(url);
   const posts = responseData.data;
   const searchForm = document.getElementById("search");
   searchForm.addEventListener("input", (event) => {
-  
-  
     const query = searchForm.value;
     console.log(query);
-    
+
     const results = searchPosts(query, posts);
     console.log(results);
-    
+
     results.forEach((result) => {
       // function generateSearchResultHtml:
-      const title = document.createElement("p")
+      const title = document.createElement("p");
       console.log(title);
-      title.textContent = result.title
-    })
+      title.textContent = result.title;
+    });
   });
-
 }
-
-
-
-
-
-
 
 export async function renderPosts(posts) {
   const imageGallery = document.querySelector(".image-gallery");

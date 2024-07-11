@@ -85,9 +85,32 @@
 
     <!-- JS -->
     <script type="module" src="index.mjs"></script>
+    <script type="module" src="javascript/ui/topNav.mjs"></script>
   </head>
   <body>
     <header class="bg-color-theme-light"></header>
+    <header class="topnav wrapper">
+      <h1>HotView Labs</h1>
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
+        <button id="btnOpen" class="topnav__open hide-on-desktop" aria-expanded="false" aria-labelledby="nav-label">&#9776</button>
+        <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button id="btnClose" class="topnav__close hide-on-desktop" aria-label="Close">&#88</button>
+          <ul class="topnav__links">
+
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Search</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Log in</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="banner-slogan">
         <h1 class="font-secondary uppercase text-center slogan">
