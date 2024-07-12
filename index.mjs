@@ -19,7 +19,7 @@ import {
   paginate,
   renderPaginationControls,
 } from "./javascript/ui/pagination.mjs";
-import { searchPosts } from "./javascript/ui/search.mjs";
+import { openSearchBar, searchPosts } from "./javascript/ui/search.mjs";
 import { sortPostsByDate } from "./javascript/ui/sortPosts.mjs";
 import { initializeTopNav } from "./javascript/ui/topNav.mjs";
 
@@ -60,6 +60,10 @@ await renderHomePage();
 // Search
 // 1. get the input from form
 // 2. get posts
+
+
+
+openSearchBar()
 
 async function displaySearchResults(url) {
   const responseData = await getPosts(url);
