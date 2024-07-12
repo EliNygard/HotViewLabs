@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 1.5rem;
-
+    margin: auto;
+    padding: 1.5rem .5rem;
+    max-width: 1120px;
+    color: var(--color-theme-dark-blue);
 }
 
 .topnav__links {

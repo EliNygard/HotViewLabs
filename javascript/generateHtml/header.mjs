@@ -3,7 +3,7 @@ export async function generateHeaderHtml() {
 
   const linkHome = document.createElement("a");
   linkHome.setAttribute("title", "HotView Labs Blog");
-  linkHome.classList.add("font-primary");
+  linkHome.classList.add("font-primary", "content-left");
   linkHome.textContent = "HotView Labs";
   linkHome.addEventListener("click", () => {
     const currentPath = window.location.pathname;
@@ -15,6 +15,7 @@ export async function generateHeaderHtml() {
   });
 
   const nav = document.createElement("nav");
+  nav.classList.add("font-primary", "content-right")
 
   const spanAria = document.createElement("span");
   spanAria.setAttribute("id", "nav-label");
