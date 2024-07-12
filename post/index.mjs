@@ -8,6 +8,7 @@ import { generateHeaderHtml } from "../javascript/generateHtml/header.mjs";
 import { generateHeaderLoggedInHtml } from "../javascript/generateHtml/headerLoggedIn.mjs";
 import { generatePostPageHtml } from "../javascript/generateHtml/postPageHtml.mjs";
 import { hideLoader, showLoader } from "../javascript/ui/loader.mjs";
+import { initializeTopNav } from "../javascript/ui/topNav.mjs";
 
 async function renderBlogPostPage(url) {
   const responseData = await getPosts(url);
@@ -36,6 +37,7 @@ async function main() {
         API_BASE + API_POSTS + "/Leli_Nygard" + `/${postId}`
       );
     }
+    initializeTopNav();
   } catch {
     console.error(error);
   } finally {

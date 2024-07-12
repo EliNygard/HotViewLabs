@@ -21,6 +21,7 @@ import {
 } from "./javascript/ui/pagination.mjs";
 import { searchPosts } from "./javascript/ui/search.mjs";
 import { sortPostsByDate } from "./javascript/ui/sortPosts.mjs";
+import { initializeTopNav } from "./javascript/ui/topNav.mjs";
 
 async function renderHomePage() {
   const userName = JSON.parse(localStorage.getItem("userName"));
@@ -31,9 +32,8 @@ async function renderHomePage() {
     // Promise for testing loader:
     // await new Promise(resolve => setTimeout(resolve, 2000));
 
-    displayDaysUntilSummit()
+    displayDaysUntilSummit();
 
-    
     if (userName) {
       // if user is logged in
       await generateHeaderLoggedInHtml();
@@ -47,6 +47,7 @@ async function renderHomePage() {
       await renderNewPostsCarousel(API_BASE + API_POSTS + "/Leli_Nygard");
       await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard");
     }
+    initializeTopNav();
   } catch (error) {
     console.error(error);
   } finally {

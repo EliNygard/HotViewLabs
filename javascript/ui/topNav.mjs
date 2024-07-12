@@ -1,28 +1,24 @@
 // source: https://www.youtube.com/watch?v=pBv7igaxfQE&t=8s
 
-let btnOpen = document.querySelector("#btnOpen");
-let btnClose = document.querySelector("#btnClose");
-let topNavMenu = document.querySelector(".topnav__menu");
-let media = window.matchMedia("(width <= 766px)");
-let main = document.querySelector("main");
-let body = document.querySelector("body");
-console.log(btnOpen);
-
 function setUpTopNav(e) {
+  const topNavMenu = document.querySelector(".topnav__menu");
   if (e.matches) {
     //is mobile
-    console.log("is mobile");
     topNavMenu.setAttribute("inert", "");
     topNavMenu.style.transition = "none";
   } else {
     //is tablet/desktop
-    console.log("is desktop");
     topNavMenu.removeAttribute("inert");
     closeMobileMenu();
   }
 }
 
 function openMobileMenu() {
+  const btnOpen = document.querySelector("#btnOpen");
+  const btnClose = document.querySelector("#btnClose");
+  const topNavMenu = document.querySelector(".topnav__menu");
+  const main = document.querySelector("main");
+  const body = document.querySelector("body");
   btnOpen.setAttribute("aria-expanded", "true");
   topNavMenu.classList.toggle("open", true);
   topNavMenu.removeAttribute("inert");
@@ -33,6 +29,11 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
+  const btnClose = document.querySelector("#btnClose");
+  const btnOpen = document.querySelector("#btnOpen");
+  const topNavMenu = document.querySelector(".topnav__menu");
+  const main = document.querySelector("main");
+  const body = document.querySelector("body");
   btnClose.setAttribute("aria-expanded", "false");
   topNavMenu.classList.toggle("open", false);
   topNavMenu.setAttribute("inert", "");
@@ -45,7 +46,10 @@ function closeMobileMenu() {
   }, 500);
 }
 
-function initializeTopNav() {
+export function initializeTopNav() {
+  const btnClose = document.querySelector("#btnClose");
+  const btnOpen = document.querySelector("#btnOpen");
+  const media = window.matchMedia("(width <= 766px)");
   setUpTopNav(media);
 
   btnOpen.addEventListener("click", openMobileMenu);
@@ -55,5 +59,3 @@ function initializeTopNav() {
     setUpTopNav(e);
   });
 }
-
-initializeTopNav()
