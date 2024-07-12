@@ -10,7 +10,8 @@
     background-color: var(--color-theme-dark-blue);
     color: var(--color-theme-light-blue);
     translate: 100vw 0;
-    transition: translate 0.5s ease-in-out;
+    opacity: 0;
+    transition: translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
   .topnav__links {
