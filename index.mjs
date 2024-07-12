@@ -31,8 +31,9 @@ async function renderHomePage() {
     // Promise for testing loader:
     // await new Promise(resolve => setTimeout(resolve, 2000));
 
-    displayDaysUntilSummit();
+    displayDaysUntilSummit()
 
+    
     if (userName) {
       // if user is logged in
       await generateHeaderLoggedInHtml();

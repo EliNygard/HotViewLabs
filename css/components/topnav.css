@@ -8,6 +8,11 @@
     color: var(--color-theme-dark-blue);
 }
 
+.topnav__open {
+    border: none;
+    background: none;
+}
+
 .topnav__links {
     display: flex;
     gap: 1rem;
@@ -24,7 +29,7 @@
 .topnav__close {
     display: block;
     margin-inline-start: auto;
-    margin-block-end: 8rem;
+    margin-block-end: 5rem;
     width: 3rem;
     height: 3rem;
 }

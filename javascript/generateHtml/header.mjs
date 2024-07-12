@@ -24,7 +24,7 @@ export async function generateHeaderHtml() {
 
   const btnOpen = document.createElement("button");
   btnOpen.setAttribute("id", "btnOpen");
-  btnOpen.classList.add("topnav__open", "hide-on-desktop");
+  btnOpen.classList.add("topnav__open", "hide-on-desktop", "font-primary");
   btnOpen.setAttribute("aria-expanded", "false");
   btnOpen.setAttribute("aria-labelledby", "nav-label");
   btnOpen.textContent = "Menu";
