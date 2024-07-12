@@ -20,22 +20,6 @@
   .topnav__item {
     font-size: 1.2rem;
   }
-
-
-}
-
-@media only screen and (max-width: 766px) and (prefers-reduced-motion) {
-  .topnav__menu {
-    translate: 0;
-    opacity: 0;
-    transform: opacity 500ms ease-in-out
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .topnav__menu.open {
-    opacity: 1;
-  }
 }
 
 @media only screen and (min-width: 767px) {
