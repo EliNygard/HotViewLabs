@@ -17,5 +17,7 @@ export function openSearchBar() {
     const search = document.forms.search;
     search.addEventListener("click", () => {
         console.log("search clicked");
+        const resultWrapper = document.createElement("div")
+        console.log(resultWrapper);
     })
 }

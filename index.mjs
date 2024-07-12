@@ -68,9 +68,9 @@ openSearchBar()
 async function displaySearchResults(url) {
   const responseData = await getPosts(url);
   const posts = responseData.data;
-  const searchForm = document.getElementById("search");
-  searchForm.addEventListener("input", (event) => {
-    const query = searchForm.value;
+  const searchInput = document.getElementById("search");
+  searchInput.addEventListener("input", (event) => {
+    const query = searchInput.value;
     console.log(query);
 
     const results = searchPosts(query, posts);
@@ -79,8 +79,8 @@ async function displaySearchResults(url) {
     results.forEach((result) => {
       // function generateSearchResultHtml:
       const title = document.createElement("p");
-      console.log(title);
       title.textContent = result.title;
+      console.log(title);
     });
   });
 }
