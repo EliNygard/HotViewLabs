@@ -85,11 +85,11 @@ export async function generateHeaderHtml() {
     window.location.href = targetPath;
   });
 
-  ulLinks.append(liSearch, liLogin, liRegister);
+  ulLinks.append(liLogin, liRegister);
   liRegister.appendChild(linkRegister);
   liLogin.appendChild(linkLogin);
-  liSearch.appendChild(btnSearch);
-  btnSearch.appendChild(searchIcon);
+  // liSearch.appendChild(btnSearch);
+  // btnSearch.appendChild(searchIcon);
   topNavMenu.append(btnClose, ulLinks);
   nav.append(spanAria, btnOpen, topNavMenu);
   // rightContainer.append(searchBtn, linkLogin, linkRegister);
