@@ -18,6 +18,7 @@ export function openSearchBar() {
     search.addEventListener("click", () => {
         console.log("search clicked");
         const resultWrapper = document.createElement("div")
+        resultWrapper.classList.add("result-wrapper")
         console.log(resultWrapper);
     })
 }

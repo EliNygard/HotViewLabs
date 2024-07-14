@@ -1,0 +1,20 @@
+.result-wrapper {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-input {
+    border: solid .5px var(--color-theme-dark-blue);
+    border-radius: 0.0625rem;
+    padding: .4rem;
+    margin: .5rem;
+    width: 80vw;
+    max-width: 300px;
+}
+
