@@ -1,3 +1,4 @@
+// Checks a single post object for a match
 export function postMatches(query, post) {
     const content = [
         post.title,
@@ -9,9 +10,15 @@ export function postMatches(query, post) {
     })
 }
 
+// Filters a post array for matches
 export function searchPosts(query, posts) {
     return posts.filter(post => postMatches(query, post))
 }
+
+// 1. display a dropdown when the search bar is clicked
+// 2. Populate the dropdown with search results as the user types
+// 3. Clear previous results before displaying new ones
+// 4. When clicking on a result8 (a post), take the user to the blog post page
 
 export function openSearchBar() {
     const search = document.forms.search;
@@ -19,6 +26,7 @@ export function openSearchBar() {
         console.log("search clicked");
         const resultWrapper = document.createElement("div")
         resultWrapper.classList.add("result-wrapper")
+        document.body.appendChild(resultWrapper)
         console.log(resultWrapper);
     })
 }

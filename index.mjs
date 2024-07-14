@@ -58,8 +58,8 @@ async function renderHomePage() {
 await renderHomePage();
 
 // Search
-// 1. get the input from form
-// 2. get posts
+// 1. get the input from form ✅
+// 2. get posts ✅
 
 
 
