@@ -18,15 +18,15 @@ export function searchPosts(query, posts) {
 // 1. display a dropdown when the search bar is clicked
 // 2. Populate the dropdown with search results as the user types
 // 3. Clear previous results before displaying new ones
-// 4. When clicking on a result8 (a post), take the user to the blog post page
+// 4. When clicking on a result (a post), take the user to the blog post page
 
 export function openSearchBar() {
     const search = document.forms.search;
     search.addEventListener("click", () => {
         console.log("search clicked");
-        const resultWrapper = document.createElement("div")
-        resultWrapper.classList.add("result-wrapper")
-        document.body.appendChild(resultWrapper)
-        console.log(resultWrapper);
+        
+
     })
 }
+
+

@@ -1,8 +1,12 @@
-.result-wrapper {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: red;
+.search-container {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: var(--color-theme-dark-blue);
+    color: var(--color-theme-light-blue);
+    translate: 100vw 0;
+    opacity: 0;
+    transition: translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .search-form {

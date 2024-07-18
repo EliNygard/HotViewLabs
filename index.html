@@ -81,7 +81,10 @@
     ></script>
 
     <!-- Scroll-lock https://github.com/rick-liruixin/body-scroll-lock-upgrade -->
-<script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js" async></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
+      async
+    ></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -91,8 +94,9 @@
   </head>
   <body>
     <header class="topnav bg-color-theme-light"></header>
-    
+
     <main>
+      
       <section class="banner-slogan">
         <h1 class="font-secondary uppercase text-center slogan">
           Delivering Accurate Insights For Global Tech Leaders
@@ -106,19 +110,15 @@
       <div class="news-line-container">
         <p class="font-secondary body-text">
           <span class="uppercase"
-            >Start planning for our next summit in <span id="daysUntilSummit"></span> days:
+            >Start planning for our next summit in
+            <span id="daysUntilSummit"></span> days:
           </span>
-          <span class="responsive-line-break">Cooperation for Tech Leaders, Oslo, 21 August 2025.</span>
-          <span >More info is coming.</span>
+          <span class="responsive-line-break"
+            >Cooperation for Tech Leaders, Oslo, 21 August 2025.</span
+          >
+          <span>More info is coming.</span>
         </p>
       </div>
-
-      <!-- Search -->
-
-      <form class="search-form" name="search">
-        <label for="search"></label>
-            <input class="search-input" type="search" id="search" name="query" placeholder="Search posts">
-        </form>
 
       <!-- Carousel start -->
       <section class="carousel-wrapper">
@@ -145,6 +145,29 @@
         </div>
       </section>
       <!-- Carousel end -->
+
+      <!-- Search -->
+
+
+        <form class="search-form" name="search">
+          <label for="search"></label>
+          <input
+            class="search-input"
+            type="search"
+            id="search"
+            name="query"
+            placeholder="Hello, what do you want to read about?"
+          />
+          <!-- <div class="searchbar-container">
+            <button class="searchbar-close hide-on-desktop" id="btnCloseSearch">
+              Close
+            </button>
+            <div class="searchbar-wrapper">
+              <h1>Post</h1>
+              <h2>Post</h2>
+            </div>
+          </div> -->
+        </form>
 
       <!-- Sort and filter posts -->
       <div class="ui-wrapper">

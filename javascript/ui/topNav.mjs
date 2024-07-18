@@ -34,12 +34,10 @@ export function initializeTopNav() {
   function setupTopNav(e) {
     if (e.matches) {
       // is mobile
-      console.log("is mobile");
       topNavMenu.setAttribute("inert", "");
       topNavMenu.style.transition = "none";
     } else {
       // is tablet/desktop
-      console.log("is desktop");
       closeMobileMenu();
       topNavMenu.removeAttribute("inert");
     }
