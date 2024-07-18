@@ -30,3 +30,14 @@ export function openSearchBar() {
 }
 
 
+// A SIMPLE SOLUTION, RENDERS POST THUMBS TO SHOW THE SEARCH RESULT:
+export function renderSearchResult(posts) {
+    const searchInput = document.getElementById("search")
+    searchInput.addEventListener("input", (event) => {
+        const query = searchInput.value
+        console.log(query);
+
+        const results = searchPosts(query, posts)
+        console.log(results);
+    })
+}

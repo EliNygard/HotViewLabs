@@ -19,7 +19,7 @@ import {
   paginate,
   renderPaginationControls,
 } from "./javascript/ui/pagination.mjs";
-import { openSearchBar, searchPosts } from "./javascript/ui/search.mjs";
+import { openSearchBar, renderSearchResult, searchPosts } from "./javascript/ui/search.mjs";
 import { sortPostsByDate } from "./javascript/ui/sortPosts.mjs";
 import { initializeTopNav } from "./javascript/ui/topNav.mjs";
 
@@ -39,13 +39,13 @@ async function renderHomePage() {
       await generateHeaderLoggedInHtml();
       await setupPostThumbs(API_BASE + API_POSTS + API_NAME);
       await renderNewPostsCarousel(API_BASE + API_POSTS + API_NAME);
-      await displaySearchResults(API_BASE + API_POSTS + API_NAME);
+      // await displaySearchResults(API_BASE + API_POSTS + API_NAME);
     } else {
       // If user is not logged in, render header for visitors and render posts from this account anyway:
       await generateHeaderHtml();
       await setupPostThumbs(API_BASE + API_POSTS + "/Leli_Nygard");
       await renderNewPostsCarousel(API_BASE + API_POSTS + "/Leli_Nygard");
-      await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard");
+      // await displaySearchResults(API_BASE + API_POSTS + "/Leli_Nygard");
     }
     initializeTopNav();
   } catch (error) {
@@ -63,7 +63,7 @@ await renderHomePage();
 
 
 
-openSearchBar()
+// openSearchBar()
 
 async function displaySearchResults(url) {
   const responseData = await getPosts(url);
@@ -116,6 +116,7 @@ async function setupPostThumbs(url) {
   const responseData = await getPosts(url);
   const posts = responseData.data;
   sortPostsByDate(posts);
+  renderSearchResult(posts);
 
   const categories = extractCategories(posts);
   generateCategoryHtml(categories);
