@@ -1,24 +1,11 @@
-.search-container {
-    position: fixed;
-    inset: 0;
-    padding: 1.5rem;
-    background-color: var(--color-theme-dark-blue);
-    color: var(--color-theme-light-blue);
-    translate: 100vw 0;
-    opacity: 0;
-    transition: translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.search-form {
-    width: 100%;
+.search-wrapper {
+    margin: 1rem .5rem;
 }
 
 .search-input {
     border: solid .5px var(--color-theme-dark-blue);
     border-radius: 0.0625rem;
     padding: .4rem;
-    margin: .5rem;
-    width: 80vw;
-    max-width: 300px;
+    width: 100%;
 }
 

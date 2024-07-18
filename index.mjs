@@ -80,7 +80,10 @@ async function displaySearchResults(url) {
       // function generateSearchResultHtml:
       const title = document.createElement("p");
       title.textContent = result.title;
+      const category = document.createElement("p")
+      category.textContent = result.tags
       console.log(title);
+      console.log(category);
     });
   });
 }
