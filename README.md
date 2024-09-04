@@ -42,7 +42,7 @@ Make sure you have Git installed. If not, you can download it from [here](https:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/FED1-PE1-EliNygard.git
+git clone git@github.com:
 ```
 
 2. Install the dependencies:
