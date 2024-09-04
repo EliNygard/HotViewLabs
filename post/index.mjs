@@ -34,7 +34,7 @@ async function main() {
       // If user is not logged in:
       generateHeaderHtml();
       await renderBlogPostPage(
-        API_BASE + API_POSTS + "/Leli_Nygard" + `/${postId}`
+        API_BASE + API_POSTS + "/Eli" + `/${postId}`
       );
     }
     initializeTopNav();
