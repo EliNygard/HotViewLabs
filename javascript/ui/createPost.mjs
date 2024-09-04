@@ -1,6 +1,7 @@
 import { API_BASE, API_NAME, API_POSTS } from "../api/constantAPI.mjs";
 import { generateHeaderLoggedInHtml } from "../generateHtml/headerLoggedIn.mjs";
 import { renderCatchErrorMessage } from "../messages/catchDisplayErrorMessage.mjs";
+import { suggestTags } from "../utilities/suggestTags.mjs";
 
 const form = document.querySelector("form");
 
@@ -14,6 +15,10 @@ form.addEventListener("submit", function (event) {
   const imgAlt = document.getElementById("img-alt").value.trim();
   const category = document.getElementById("category").value.trim();
 
+  const suggestedTags = suggestTags(title)
+
+  const tags = [category, ...suggestedTags]
+
   const token = localStorage.getItem("accessToken");
 
   // Construct the request options
@@ -26,7 +31,7 @@ form.addEventListener("submit", function (event) {
         url: imgUrl,
         alt: imgAlt,
       },
-      tags: [category],
+      tags: tags,
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",

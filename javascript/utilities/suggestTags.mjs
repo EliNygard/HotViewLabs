@@ -14,6 +14,8 @@ const tagDictionary = {
 
 export function suggestTags(title) {
   const suggestedTags = [];
+  console.log(suggestedTags);
+  
 
   for (const [tag, regex] of Object.entries(tagDictionary)) {
     if (regex.test(title)) {
