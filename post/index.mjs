@@ -38,8 +38,8 @@ async function main() {
       );
     }
     initializeTopNav();
-  } catch {
-    console.error(error);
+  } catch(error) {
+    // console.error(error);
   } finally {
     hideLoader();
   }

@@ -49,7 +49,7 @@ async function renderHomePage() {
     }
     initializeTopNav();
   } catch (error) {
-    console.error(error);
+    // console.error(error);
   } finally {
     hideLoader();
   }
