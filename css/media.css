@@ -1,0 +1,390 @@
+@media only screen and (max-width: 766px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: var(--color-theme-dark-blue);
+    color: var(--color-theme-light-blue);
+    translate: 100vw 0;
+    opacity: 0;
+    transition: translate 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .topnav__menu.open {
+    translate: 0 0;
+    opacity: 1;
+}
+
+  .topnav__links {
+    flex-direction: column;
+  }
+
+  .topnav__item {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .hide-on-desktop {
+    display: none;
+  }
+
+  /* font */
+
+  .body-text {
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.02rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .heading-primary {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* header and footer */
+
+  .topnav {
+    font-size: 1.2rem;
+  }
+
+  .h-f-container {
+    height: 5rem;
+  }
+
+  .content-left {
+    font-size: 1.75rem;
+    letter-spacing: 0.1925rem;
+  }
+
+  .content-right {
+    font-size: 1.2rem;
+    gap: 1.25rem;
+  }
+
+  .content-right button {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+  }
+
+  .footer-container {
+    height: 17.5rem;
+  }
+
+  /* banner slogan */
+
+  .banner-slogan {
+    height: 11.25rem;
+  }
+
+  .slogan {
+    font-size: 2.5rem;
+    line-height: calc(2.5rem * 1.5);
+    padding: 0rem;
+  }
+
+  /*news line*/
+
+  .responsive-line-break::after {
+    content: "";
+  }
+
+  /* carousel */
+
+  .carousel-wrapper {
+    max-width: 80rem;
+  }
+
+  .carousel-wrapper h2 {
+    margin: 2.5rem 0 0 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* .new-article {
+        max-width: 70rem;
+        max-height: 27.4375rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.25rem;
+        padding: 2.5rem 1.5rem 3.75rem 1.5rem;
+        margin: 2.5rem 2.5rem 1rem 2.5rem;
+    } */
+  /* 
+    .new-article div {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .new-article img {
+        max-width: 32rem;
+        max-height: 21rem;
+        width: 60%;
+    }
+
+    .new-article p {
+        max-width: 32.6rem;
+        max-height: 11.25rem;
+    } */
+
+  .new-article button {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+  }
+
+  .button-carousel {
+    font-size: 1.3rem;
+  }
+
+  .carousel-buttons-container {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  /* sort, filter */
+
+  .ui-wrapper {
+    display: flex;
+    gap: 1.75rem;
+    margin: 1.25rem 1rem;
+  }
+
+  .ui-container {
+    gap: 1.75rem;
+    margin: 1rem 0;
+  }
+
+  .ui-container .button-small {
+    font-size: 1rem;
+  }
+
+  /* thumnails home page*/
+
+  /* .image-gallery {
+        gap: 1rem;
+    } */
+
+  .image-gallery > li {
+    flex-basis: 330px;
+  }
+
+  /* pagination */
+
+  .pagination {
+    gap: 4rem;
+  }
+
+  /* post page */
+
+  .post-container {
+    margin-top: 2rem;
+  }
+
+  .post-details {
+    gap: 4rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    justify-content: start;
+  }
+
+  /* login-reg-form*/
+
+  .login-reg-form-container {
+    padding: 6rem 0;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 32rem;
+    height: 4rem;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  .register-info {
+    font-size: 1rem;
+  }
+
+  /* posts table */
+
+  table thead,
+  table tbody {
+    font-size: 1.125rem;
+    letter-spacing: 0.0225rem;
+  }
+
+  /* edit-create-form */
+
+  .edit-create-form-container form {
+    padding: 2.5rem 2rem 3.25rem 2rem;
+  }
+
+  .edit-create-form-container form label:nth-last-child(-n + 8) {
+    padding-top: 1.5rem;
+  }
+
+  .buttons-form-wrapper {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin: 5rem 0 0 0;
+  }
+
+  /* messages */
+
+  .message-success {
+    padding: 2rem 1rem;
+  }
+
+  .message-success .login-message-error {
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  /* font */
+
+  .body-text {
+    font-size: 1.125rem;
+    line-height: 1.68rem;
+    letter-spacing: 0.02rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  /* carousel */
+
+  .carousel-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .new-article {
+    max-width: 70rem;
+    max-height: 27.4375rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 2.5rem 1.5rem 3.75rem 1.5rem;
+    margin: 2.5rem 2.5rem 1rem 2.5rem;
+  }
+
+  .new-article div {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .new-article img {
+    max-width: 32rem;
+    max-height: 21rem;
+    /* width: 60%; */
+  }
+
+  .new-article p {
+    max-width: 32.6rem;
+    max-height: 11.25rem;
+  }
+
+  /* ui container */
+
+  .ui-container .button-small {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+  }
+
+  /* thumbnails home page*/
+
+  .thumb-wrapper {
+    margin: 4rem auto 2rem auto;
+  }
+
+  .image-gallery {
+    /* justify-content: space-between; */
+    gap: 2rem;
+  }
+
+  .image-gallery > li {
+    flex-basis: 544px;
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+
+  /* .posts-wrapper {
+        /* justify-content: space-between; */
+  /* gap: 1rem; */
+  /* margin: 0 5rem 2rem 5rem;/* */
+  /* }  */
+
+  .image-gallery li a h3 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .edit-post-wrapper a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  .wrapper-padding-2 {
+    padding: 2rem 0rem;
+  }
+
+  /* sort, filter */
+
+  .ui-wrapper {
+    margin-left: 0;
+  }
+
+  /* post-list*/
+
+  .image-gallery {
+    margin-bottom: 4rem;
+  }
+
+  /* pagination*/
+
+  .pagination {
+    margin-bottom: 9rem;
+  }
+
+  /* header and footer */
+
+  .h-f-container {
+    padding: 0;
+  }
+
+  .content-right {
+    gap: 4.5rem;
+  }
+
+  /* post manage table */
+
+  .table-wrapper {
+    margin: 8rem 0;
+  }
+}

@@ -1,0 +1,64 @@
+.login-reg-form-container {
+    margin: auto;
+    padding: 4rem 0;
+    max-width: 45rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-reg-form-container > form {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    border: none;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    background-color: #fff;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 17rem;
+    height: 3rem;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border: 2px solid var(--color-theme-dark-blue);
+    outline: none;
+    background-color: #fff;
+}
+
+::placeholder {
+    color: var(--color-theme-dark-blue);
+    font-family: Tahoma;
+    font-size: .9rem;
+}
+
+.login-reg-form-container form > .button {
+    margin-top: 2.5rem;
+}
+
+.login-reg-form-container label {
+    visibility: hidden;
+}
+
+.register-info {
+    margin: 0 0 2rem 0;
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    gap: .5rem;
+    color: var(--color-theme-dark-blue);
+    font-size: .8rem;
+}
+
+.register-info > a {
+    text-decoration: underline var(--color-theme-dark-blue);
+}

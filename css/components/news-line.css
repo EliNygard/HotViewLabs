@@ -1,0 +1,16 @@
+.news-line-container {
+    background-color: var(--color-theme-dark-blue);
+    margin: 1.5rem 0;
+}
+
+.news-line-container p {
+    color: var(--color-theme-light-blue);
+    padding: .5rem;
+}
+
+.responsive-line-break::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+/* comment */

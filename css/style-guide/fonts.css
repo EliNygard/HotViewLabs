@@ -1,0 +1,57 @@
+.font-primary {
+    font-family: Tahoma, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-secondary {
+    font-family: Cambria, Georgia, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-body);
+}
+
+.heading-primary {  
+    font-size: 1.2rem;
+    line-height: normal;
+    letter-spacing: 0.024rem;
+    margin: 0;
+    padding: 0;
+    color: var(--color-theme-dark-blue);
+}
+
+.heading-secondary {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

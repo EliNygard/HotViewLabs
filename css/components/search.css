@@ -1,0 +1,11 @@
+.search-wrapper {
+    margin: 1rem .5rem;
+}
+
+.search-input {
+    border: solid .5px var(--color-theme-dark-blue);
+    border-radius: 0.0625rem;
+    padding: .4rem;
+    width: 100%;
+}
+

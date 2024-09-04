@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page Meta -->
+        <title>Hot View Labs | Blog post manager</title>
+        <meta name="description" content="Manage your blog posts">
+        <meta name="author" content="Eli Nygard">
+        <meta name="robots" content="none">
+        <meta name="theme-color" content="#121950">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <!-- JS -->
+        <script type="module" src="../javascript/ui/manage.mjs"></script>
+        <script type="module" src="../javascript/ui/topNav.mjs"></script>
+    </head>
+    <body>
+        <header class="bg-color-theme-light">
+        </header>
+        <main>
+            <!-- <div class="loader"></div> -->
+            <section id="table-wrapper" class="table-wrapper">
+
+                <div class="heading-container">
+                    <h1 class="font-primary heading-primary">Blog Posts</h1>
+                    <a class="button button-small hide-on-desktop" href="create.html">New Post</a>
+                    <!-- <button class="button button-small hide-on-desktop">New Post</button> -->
+                    <!-- <button class="button button-big hide-on-mobile">New Post</button> -->
+                    <a class="button button-big hide-on-mobile" href="create.html">New Post</a>
+                    </div>
+                <div id="login-message"></div>
+                <div id="loader-container"></div>
+            
+                
+                <div style="overflow-x:auto;">
+                    <table id="posts-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Date</th>
+                                <th class="hide" scope="col">Button action</th>
+                                <th class="hide" scope="col">Button action</th>
+                                <th class="hide" scope="col">Button action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <!-- <tr>
+                                <td>Blog title</td>
+                                <td>Author Name</td>
+                                <td>22.4.2024</td>
+                                <td>
+                                    <button id="js-btn-publish" class="button button-small button-transparent">Publish</button>
+                                </td>
+                                <td>
+                                    <a href="edit.html" id="js-btn-edit" class="button button-small button-transparent">Edit</a>
+                                </td>
+                                <td>
+                                    <button id="js-btn-delete" class="button button-small">Delete</button>
+                                </td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>Blog title</td>
+                                <td>Author Name</td>
+                                <td>22.4.2024</td>
+                                <td>
+                                    <button id="js-btn-publish" class="button button-small button-transparent">Publish</button>
+                                </td>
+                                <td>
+                                    <a href="edit.html" id="js-btn-edit" class="button button-small button-transparent">Edit</a>
+                                </td>
+                                <td>
+                                    <button id="js-btn-delete" class="button button-small">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blog title</td>
+                                <td>Author Name</td>
+                                <td>22.4.2024</td>
+                                <td>
+                                    <button id="js-btn-publish" class="button button-small button-transparent">Publish</button>
+                                </td>
+                                <td>
+                                    <a href="edit.html" id="js-btn-edit" class="button button-small button-transparent">Edit</a>
+                                </td>
+                                <td>
+                                    <button id="js-btn-delete" class="button button-small">Delete</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

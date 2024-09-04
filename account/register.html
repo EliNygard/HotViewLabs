@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page Meta -->
+        <title>Hot View Labs | Log in</title>
+        <meta name="description" content="Log into your account">
+        <meta name="author" content="Eli Nygard">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#121950">
+
+        <!-- Open Graph Meta Tags (for Facebook and other platforms) -->
+        <meta property="og:url" content="https://norofffeu.github.io/FED1-PE1-EliNygard/account/login.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="HotView Labs - Log in">
+        <meta property="og:description" content="Log into your account">
+        <meta property="og:image" content="C:\Users\eliny\OneDrive\Dokumenter\NOROFF\23H\07 Project Exam 1\FED1-PE1-EliNygard\C:\Users\eliny\OneDrive\Dokumenter\NOROFF\23H\07 Project Exam 1\FED1-PE1-EliNygard\assets\favicon_io\android-chrome-192x192.png">
+        <meta property="og:image:alt" content="The HotView Labs' logo, a big blue L on white background">
+        
+        <!-- Twitter Cards Meta Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://norofffeu.github.io/FED1-PE1-EliNygard/account/login.html">
+        <meta name="twitter:title" content="HotView Labs - Blog Post">
+        <meta name="twitter:description" content="Log into your account">
+        <meta name="twitter:image" content="C:\Users\eliny\OneDrive\Dokumenter\NOROFF\23H\07 Project Exam 1\FED1-PE1-EliNygard\C:\Users\eliny\OneDrive\Dokumenter\NOROFF\23H\07 Project Exam 1\FED1-PE1-EliNygard\assets\favicon_io\android-chrome-192x192.png">
+        <meta name="twitter:image:alt" content="The HotView Labs' logo, a big blue L on white background">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <!-- JS -->
+        <script type="module" src="../javascript/api/register.mjs"></script>
+
+
+
+    </head>
+    <body class="bg-color-theme-light-blue">
+        <header class="bg-color-theme-light-blue">
+            <nav class="h-f-container header-container font-primary header-bg-blue">
+                <div class="content-left">
+                    <a href="../index.html" title="HotView Labs Blog">HotView Labs</a>
+                </div>
+                <div class="content-right">
+                    <!-- <a href="./login.html">Log in</a>
+                    <a href="./register.html">Register</a> -->
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="login-reg-form-container" class="login-reg-form-container">
+                
+                <h1 class="font-primary color-theme-dark-blue heading-primary">Create an account</h1>
+                
+                <form name="register" id="js-registration-form" action="../post/manage.html" method="GET">
+                    <label for="name">Name</label>
+                    <input required minlength="3" type="text" name="name" id="name" placeholder="Name">
+                    
+                    <label for="email">E-mail address</label>
+                    <input required type="email" name="email" id="email"  placeholder="E-mail address">
+                    
+                    <label for="password">Password</label>
+                    <input required type="password" name="password" id="password"  placeholder="Password">
+                    
+                    <label for="confirm-password">Confirm password</label>
+                    <input required type="password" name="confirm-password" id="confirm-password"  placeholder="Confirm password">
+                    
+                    <div class="password-error-container error-message-container"></div>
+
+                    <input class="button button-big" type="submit" value="Register">
+                </form>
+                
+                <div class="register-info">
+                    <p>Already an administrator?</p>
+                    <a href="login.html">Log in</a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+.color-text-body {
+    color: var(--color-text-body);
+}
+
+.color-theme-dark-blue {
+    color: var(--color-theme-dark-blue);
+}
+
+.color-theme-light-blue {
+    color: var(--color-theme-light-blue);
+}
+
+.color-theme-light-orange {
+    color: var(--color-theme-light-orange);
+}
+
+.color-theme-dark-orange {
+    color: var(--color-theme-dark-orange);
+}
+
+.color-hover-dark-blue {
+    color: var(--color-hover-dark-blue);
+}
+
+
+/* Background Colors */
+
+.bg-color-theme-light-blue {
+    background-color: var(--color-theme-light-blue);
+}
+
+.bg-color-theme-light {
+    background-color: #fff;
+}

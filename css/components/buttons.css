@@ -1,0 +1,51 @@
+.button {
+    border-radius: 0.0625rem;
+    border: none;
+    background-color: var(--color-theme-dark-blue);
+    color: var(--color-text-light);
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.02rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-hover-dark-blue);
+}
+
+.button-transparent {
+    border: solid 0.5px var(--color-theme-dark-blue);
+    background-color: transparent;
+    color: var(--color-theme-dark-blue);
+    transition: border 0.1s, color 0.3s;
+}
+
+.button-transparent:hover {
+    background-color: transparent;
+    border: solid 2px var(--color-hover-dark-blue);
+}
+
+.button-big {
+    /* width: 8.2rem;
+    height: 3rem; */
+    padding: .75rem 2.5rem;
+}
+
+.button-small {
+    /* width: 5.25rem;
+    height: 1.7rem; */
+    padding: .25rem 1rem;
+}
+
+.confirm-button {
+    background-color: var(--color-theme-light-blue);
+    color: var(--color-text-body);
+}
+
+

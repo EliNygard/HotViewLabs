@@ -1,0 +1,45 @@
+/*fundamental code*/
+@import url("./reset.css");
+@import url("./style-guide/colors.css");
+@import url("./style-guide/fonts.css");
+@import url("./style-guide/variables.css");
+@import url("./style-guide/flex.css");
+
+/*component code*/
+@import url("./components/buttons.css");
+@import url("./components/carousel.css");
+@import url("./components/header-footer.css");
+@import url("./components/heading-container.css");
+@import url("./components/slogan.css");
+@import url("./components/messages.css");
+@import url("./components/loader.css");
+@import url("./components/ui-buttons.css");
+@import url("./components/news-line.css");
+@import url("./components/topnav.css");
+@import url("./components/search.css");
+
+/* effects */
+@import url("./effects/hover-underline.css");
+@import url("./effects/hover-text-shadow.css");
+
+/* pages code */
+@import url("./pages/edit-create-form.css");
+@import url("./pages/login-reg-form.css");
+@import url("./pages/manage-table.css");
+@import url("./pages/post-page.css");
+@import url("./pages/posts-list.css");
+
+
+/* global code */
+@import url("./global/links.css");
+@import url("./global/wrapper.css");
+@import url("./global/text.css");
+@import url("./global/scroll.css");
+
+
+
+/* @import url("./components/404.css"); */
+
+
+/*layout code*/
+@import url("./media.css");
